@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>PERSONAL TRAINER JJ</title>
+    <link rel="icon" href="img/logo.png"=" type="png" href="logo.png"></head>
+<body>
+    <!-- MENU -->
+    <div class="contenedor-header">
+        <header>
+            <h1>PERSONAL<span class="txtRojo">TRAINER JJ</span></h1>
+             
+            <nav id="nav"> 
+                <a href="#inicio" onclick="seleccionar()">inicio</a>
+                <a href="#Conoceme" onclick="seleccionar()">Conoceme</a>
+                <a href="#servicios" onclick="seleccionar()">Servicios</a>
+                <a href="#Planes" onclick="seleccionar()">Opciones</a>
+                <a href="#galeria" onclick="seleccionar()">Galería</a>
+                <a href="#Instructor" onclick="seleccionar()">Instructor</a>
+                <a href="#contacto" onclick="seleccionar()">Contacto</a>
+            </nav>
+            <div class="redes">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/personaltrainerjj/?hl=es"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://wa.me/573002512333" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+            <!-- ICONO DEL MENU RESPONSIVE -->
+            <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>                
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-seccion">
+            <div class="info">
+                <h2>COMIENZA<span class="txtRojo">AHORA</span></h2>
+                <p>¡ESTOY AQUI PARA AYUDARTE Y ACOMPAÑARTE EN TU PROCESO!</p>
+                <a href="#Conoceme" class="btn-mas">
+                    <i class="fa-solid fa-circle-chevron-down"></i>
+                </a>
+            </div>
+            
+            <div class="opciones">
+                <div class="opcion">
+                    01.FUNCIONAL
+                </div>
+                <div class="opcion">
+                    02.RUMBA FITNESS
+                </div>
+                <div class="opcion">
+                    03.CARDIO FITNESS
+                </div>
+                <div class="opcion">
+                    04.MILITAR TRAIN
+                </div>
+                <div class="opcion">
+                    05.ARTES MARCIALES
+                     ADAPTADAS AL FITNESS
+                </div>
+                <div class="opcion">
+                    06.TRX TRAIN
+                </div>
+                <div class="opcion">
+                    07.HIDROAEROBICOS
+                </div>
+                <div class="opcion">
+                    08.PAUSAS ACTIVAS      
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONOCEME -->
+    
+    <section id="Conoceme" class="Conoceme"> 
+        <div class="fila">
+            <div class="col">
+                <img src="img/foto perfil.jpg" alt="">
+            </div>
+            <div class="col">
+                <div class="contenedor-titulo">
+                    <div class="numero">
+                        01
+                    </div>
+                    <div class="info">
+                        <span class="frase">TRANSFORMA TU CUERPO Y MENTE</span>
+                        <h2>CONOCEME <br> PERSONALTRAINERJJ</h2>
+                    </div>
+                </div>
+                <p class="p-especial"><span class="txtRojo">Licenciado en educación física y deportes</span> : Mi formación académica me ha proporcionado una sólida base en ciencias del deporte, fisiología del ejercicio y metodologías de entrenamiento.
+                    <br> <br>
+                    <span class="txtRojo">Tecnólogo en Actividad Física</span>: Con un enfoque práctico y técnico, he adquirido habilidades específicas para diseñar y ejecutar programas de actividad física adaptados a diferentes necesidades y objetivos. 
+                    <br> <br>
+                     <span class="txtRojo">Certificaciones complementarias</span> : En el ámbito deportivo , el acondicionamiento físico y la actividad física, lo que me permite ofrecer un enfoque integral y actualizado en mis servicios de entrenamiento.</p>
+                <p></p>
+            </div>
+        </div>
+        <hr>
+        <div class="fila-Conoceme">
+            <div class="col1">
+                <span class="frase">
+                    <span class="txtRojo">TRANSFORMA TU CUERPO</span>Y MENTE
+                </span>
+                <h2>ENTRENA <span class="txtRojo">CADA</span> DIA!</h2>
+            </div>
+            <div class="col2">
+                
+                <button onclick="document.getElementById('mensaje').scrollIntoView({ behavior: 'smooth' })">
+                    SEPARA TU SERVICIO
+                </button>
+                
+
+                     
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SERVICIOS -->
+    <section class="servicios" id="servicios">
+        <div class="contenido-seccion">
+            <div class="fila">
+                <div class="col">
+                    <div class="contenedor-titulo">
+                        <div class="numero">
+                            02
+                        </div>
+                        <div class="info">
+                            <span class="frase">TRANSFORMA TU CUERPO Y MENTE</span>
+                            <h2>SERVICIOS</h2>
+                        </div>
+                    </div>
+                    <p class="p-especial">Elige una modalidad de entrenamiento de tu gusto</p>
+                    <p>Las modalidades de entrenamiento estan diseñadas de manera presencial o virtual, ofreciendo comodidad con las actividades que mejor manejes ,se hace un acompañamiento en cada una de ellas, que se sientan satisfechos
+                    con la variedad de ejercicios integrales que se les ofrece y al final de la clase salgan motivados física y mentalmente.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="info-servicios">
+            <table>
+                <tr>
+                    <td>
+                        <i class="fas fa-dumbbell"></i>
+                        <h3><span class="txtRojo">Clases </span> de Funcional</h3>
+                        <p>El entrenamiento funcional es un enfoque de ejercicio que se centra en mejorar los movimientos que realizamos en la vida cotidiana y en actividades deportivas. <br>
+                         Este tipo de entrenamiento utiliza ejercicios que involucran múltiples grupos musculares y articulaciones, imitando gestos naturales y funcionales.</p>
+                    </td>
+                    <td>
+                        <i class="fa fa-music" aria-hidden="true"></i>
+                        <h3><span class="txtRojo">Clases </span> de Rumba aeróbica</h3>
+                        <p>La rumba aeróbica es una modalidad de ejercicio que combina movimientos de baile con ritmos latinos y ejercicios aeróbicos. Es una forma divertida y dinámica de mantenerse en forma, que no solo mejora la salud física, sino también el bienestar mental.
+                            accesible para persona de todas las edades y adaptable a todas las capacidades individuales.
+                        </p>
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-person-running"></i>
+                        <h3><span class="txtRojo">Clases </span> de cardio fitness</h3>
+                        <p> Sesiones de ejercicios diseñados para mejorar la resistencia cardiovascular y la salud general del corazón y los pulmones. Este tipo de entrenamiento incluye una variedad de movimientos aeróbicos que elevan la frecuencia cardíaca y la respiración, utilizando grandes grupos musculares de manera repetitiva y rítmica.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <h3><span class="txtRojo">Clases </span> de MIlitar Train fitness</h3>
+                        <p>El entrenamiento físico militar es una modalidad de ejercicio que se inspira en las rutinas de entrenamiento físico militar adaptada para las personas que se sientan en la condición de realizarlas . Este tipo de entrenamiento se enfoca en desarrollar la fuerza, resistencia, agilidad y disciplina a través de una combinación de ejercicios cardiovasculares, de fuerza y de resistencia..</p>
+                    </td>
+                    <td>
+                        <i class="fas fa-fist-raised"></i>
+                        <h3><span class="txtRojo">Clases </span> de artes marciales<span class="txtRojo"> adaptadas al fitness</span> </h3>
+                        <p>Las artes marciales adaptadas al fitness son una modalidad de ejercicio que combina técnicas y movimientos de diversas artes marciales con ejercicios aeróbicos y de fuerza. Este enfoque está diseñado para mejorar la condición física general, la coordinación y la agilidad, sin la necesidad de contacto físico o combate. Es una forma accesible y divertida de mantenerse en forma, adecuada para personas de todas las edades y niveles de condición físicas.</p>
+                    </td>
+                    <td>
+                        <i class="fas fa-person-swimming"></i>
+                        <h3><span class="txtRojo">Clases </span> de Hidro aeróbicos</h3>
+                        <p>Los hidroaeróbicos, también conocidos como hidrogimnasia, son una modalidad de ejercicio que se realiza en el agua, generalmente en una piscina. Esta actividad combina movimientos aeróbicos, ejercicios de resistencia y estiramientos, aprovechando la resistencia natural del agua para trabajar diferentes grupos musculares de manera suave y efectiva.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- SECCION OPCIONES -->
+    <section id="Planes" class="Planes">
+        <div class="fila">
+            <div class="col">
+                <img src="img/foto1.jpg" alt="personal trainer jj">
+            </div>
+            <div class="col">
+                <div class="contenedor-titulo">
+                    <div class="numero">
+                        03
+                    </div>
+                    <div class="info">
+                        <span class="frase">LA MEJOR EXPERIENCIA</span>
+                        <h2>OPCIONES</h2>
+                    </div>
+                </div>
+                <p class="p-especial"> ¡Contácta hoy mismo y comienza tu transformación!.</p>
+                <ul>
+                    <li><span> PRESENCIAL O VIRTUAL</span> : ¡Elige tu opción ideal! No importa cuál sea tu preferencia, estoy aquí para apoyarte en tu camino hacia una vida más saludable. Con las opciones de entrenamiento presencial y virtual, tienes la libertad de elegir cómo y dónde quieres ponerte en forma. </li>
+                    <li><span>ZONA DEL ENTRENADOR O DESPLAZAMIENTO A TU DOMICILIO </span> : decide la opción de un entorno de entrenamiento especializado en la comodidad de tu domicilio o la posibilidad de poderte desplazar a la zona del entrenador, mi disposición siempre es poderte ayudar en tu proceso para alcanzar tus objetivos físicos,psicológicos y mentales en la mejora del rendimiento óptimo de salud, optando por tus necesidades y estilo de vida.</li>
+                    <li><span>UNIDADES DEPORTIVAS O ZONAS AL AIRE LIBRE</span> :¡Sal de la rutina y entrena donde la naturaleza te inspira!,Tu gimnasio es el parque, tu techo es el cielo,Transforma tu cuerpo y tu mente disfrutando del ejercicio, la diversión y el bienestar en tu espacio favorito al aire libre,aprovecha las unidades deportivas y parques para un entrenamiento completo y revitalizante."
+                        
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION GALERIA -->
+    <section class="galeria" id="galeria">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+                <div class="numero">
+                    04
+                </div>
+                <div class="info">
+                    <span class="frase">TRANSFORMA TU CUERPO Y MENTE</span>
+                    <h2>GALERIA</h2>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <img src="img/ENTRENOMILITAR21.jpg" alt="Entrenamiento militar fitness">
+                </div>
+                <div class="col">
+                    <img src="img/HIDRO1.jpg" alt="Clases de hidroaeróbicos">
+                </div>
+                <div class="col">
+                    <img src="img/foto3.jpg" alt="Entrenamiento funcional">
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <img src="img/rumba.jpg" alt="Rumba aerobica">
+                </div>
+                <div class="col">
+                    <img src="img/artes marciales.jpg" alt="Artes marciales adaptadas al fitness">
+                </div>
+                <div class="col">
+                    <img src="img/PAUSAS ACTIVAS-1.jpg" alt="Pusas activas empresariales ">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCION INSTRUCTOR -->
+    <section class="Instructor" id="Instructor"> <!--css .Instructor{}-->
+        <div class="contenido-seccion">   <!--css .contenido-seccion-->
+            <div class="contenedor-titulo">  <!--css .Instructor .contenedor-titulo-->
+                <div class="numero">    <!--css .numero-->
+                    05
+                </div>
+                <div class="info">
+                    <span class="frase">TRANSFORMA TU VIDA, JUNTOS MAS FUERTES CADA DIA</span>
+                    <h2>INSTRUCTOR</h2>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <img src="img/foto perfil.jpg" width="252" height="300" alt="">
+                    <div class="info">
+                        <h2>PERSONAL TRAINER JJ</h2>
+                        <p>“Transforma tu cuerpo, transforma tu vida” <br>
+                        Te ayudo no solo físicamente, sino también en tu bienestar general.</p>
+                       
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/ANUNCIO.png" width="252" height="300" alt="">
+                    <div class="info">
+                        <h2>PERSONAL TRAINER JJ</h2>
+                        <p>“Entrena con propósito, vive con pasión” <br>
+                         Te inspiro a entrenar con un objetivo claro y a vivir una vida con pasión y energía</p>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/ENTRENOMILITAR21.jpg" width="252" height="300" alt="">
+                    <div class="info">
+                        <h2>PERSONAL TRAINER JJ</h2>
+                        <p>“Inspira, motiva, transforma” <br>
+                             Mi proposito es inspirarte y motivarte, ayudándo a transformar tu vida a través de entrenamientos integrales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+                <div class="numero">06</div>
+                <div class="info">
+                    <span class="frase">TRANSFORMA TU CUERPO Y MENTE</span>
+                    <h2>CONTACTO</h2>
+                </div>
+            </div>
+
+            <form action="https://formspree.io/f/xpwlawbr" method="post">
+            <div class="fila">
+                <div class="col">
+                    <input type="text" name="email" id="email" placeholder="Ingrese Email" required>
+                </div>
+                <div class="col">
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre" required>
+                </div>
+            </div>
+            <div class="mensaje">
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingresa el Mensaje" required></textarea>
+                <button type="submit" id="enviar">Enviar Mensaje</button>
+            </div>
+            </form>
+
+            <div class="fila-datos">
+                <div class="col">
+                    <i class="fa-solid fa-location-dot"></i>
+                    MEDELLIN-COLOMBIA
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-phone"></i>
+                    +57 3002512333
+                </div>
+                <div class="col">
+                    <i class="fa-regular fa-clock"></i>
+                    Lunes a Viernes, 6:00h - 21:00h <br>
+                    Sábados 6:00h - 10:00h
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="info">
+            <p>2024 - <span class="txtRojo">PERSONAL TRAINER JJ</span> Todos los derechos reservados</p>
+            <div class="redes">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/personaltrainerjj/?hl=es"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://wa.me/573002512333" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+            
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script>
+        document.querySelector("form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const form = e.target;
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(form),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    alert(" Mensaje enviado con éxito. ¡Gracias!");
+                    form.reset();
+                } else {
+                    alert(" Ocurrió un error. Inténtalo nuevamente.");
+                }
+            });
+        });
+        </script>
+            
+</body>
+</html>
+
+CSS
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;600;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow';
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background: url(img/fondo\ gimnasio\ 3.png);
+    transition: background-color 0.5s ease;
+      }
+/* *********** */
+/* ENCABEZADO - MENU */
+/* *********** */
+.contenedor-header{
+    width: 100%;
+    position:fixed;
+    border-bottom: 1px solid #1f283e;
+    background-color: rgba(0,0,0,.7);
+    z-index: 99;
+    padding: 0 20px;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin:auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px 0;
+    color: #fff;
+}
+.txtRojo{
+    color:#ff1133;
+}
+.contenedor-header header nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    text-transform: uppercase;
+}
+.contenedor-header header nav a:hover{
+    color: #ff1133;
+}
+.contenedor-header header .redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 8px;
+}
+.contenedor-header header .redes a:hover{
+    color: #ff1133;
+}
+.nav-responsive{
+    display: none;
+    font-size: 25px;
+ }
+ /* *********** */
+/* SECCIÓN INICIO */
+/* *********** */
+.inicio{
+    height: 100vh;
+    background:linear-gradient(rgba(0, 1, 3, 0.5), rgba(0,0,0,.7)),url(img/funcional.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    position: relative;
+}
+.inicio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.inicio .info{
+    width:fit-content;
+    margin: auto;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.inicio .info h2{
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
+.inicio .info p{
+    margin: 20px;
+    color: #797e8e;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.inicio .info .btn-mas{
+    width: 50px;
+    margin: auto;
+    height: 50px;
+    border: 2px solid #ff1133;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ff1133;
+    margin-top: 50px;
+    text-decoration: none;
+}
+.opciones{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.inicio .opciones .opcion{
+    border-top: 2px solid #797e8e;
+    padding: 7px;
+    color: #797e8e;
+    margin: 0 20px;
+}
+/* *********** */
+/* SECCION CONOCEME */
+/* *********** */
+.Conoceme {
+    background:linear-gradient( to bottom, rgba(0, 14, 41, 0.6), rgba(0, 7, 78, 0.7)),url(img/cardio.jpg);
+    background-size: cover;
+    
+    margin:auto;
+    height: 100vh;
+    background-color: #a2a39d;
+    padding: 70px 50px;
+    text-align: justify;
+    
+}
+.Conoceme .fila{
+    display: flex;
+    align-items: center;
+    
+}
+.Conoceme .fila .col{
+    width: 50%;
+}
+.Conoceme .fila .col img{
+    width: 60%;
+    display:block;
+    margin:auto;
+    margin-bottom: 30px;
+    padding: 50px;
+}
+.Conoceme .fila .col .contenedor-titulo{
+    display: flex;
+    align-items:center;
+}
+.Conoceme .fila .col .contenedor-titulo .numero{
+    color: #ff1133;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+.Conoceme .fila .col .contenedor-titulo .info{
+    margin-left: 30px;
+}
+.Conoceme .fila .col .contenedor-titulo .info .frase{
+    color: #f50606;
+}
+.Conoceme .fila .col .contenedor-titulo .info h2{
+    font-size: 3rem;
+}
+.Conoceme .fila .col p {
+   margin-bottom: 5px;
+   line-height: 20px;
+   color: #fdfdf8;
+      
+}
+.Conoceme .fila .col .p-especial{
+    font-weight: bold;
+    
+}
+.Conoceme hr{
+    margin-bottom: 30px;
+}
+.Conoceme .fila-Conoceme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Conoceme .fila-Conoceme .frase{
+    font-size: 18px;
+    font-weight: 600;
+}
+.Conoceme .fila-Conoceme h2{
+    font-size: 2.5rem;
+}
+.Conoceme .fila-Conoceme button{
+    background-color: #ff1133;
+    border: none;
+    color: #f6fa0a;
+    padding: 15px 35px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* ********** */
+/* SERVICIOS */
+/* ********** */
+.servicios{
+    color: #fff;
+    position: relative;
+    text-align: justify;
+}
+.servicios .contenido-seccion{
+    background:linear-gradient( rgba(0, 14, 41, 0.6), rgba(0, 7, 78, 0.7)),url(img/ENTRENO20.jpg);
+    background-size:cover;
+    background-position: center center;
+    margin:center;
+    padding: 0 20px;
+    height: 100vh;
+}
+.servicios .contenido-seccion .fila{
+    width: 800px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+.servicios .contenido-seccion .fila .col{
+    width: 50%;
+}
+.servicios .contenido-seccion .fila .col img{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+.servicios .fila .col .contenedor-titulo{
+    display: flex;
+    align-items: center;
+}
+.servicios .fila .col .contenedor-titulo .numero{
+    color: #ff1133;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+.servicios .fila .col .contenedor-titulo .info{
+    margin-left: 30px;
+}
+.servicios .fila .col .contenedor-titulo .info .frase{
+    color: #ff1133;
+}
+.servicios .fila .col .contenedor-titulo .info h2{
+    font-size: 3rem;
+}
+.servicios .fila .col p{
+   margin-bottom: 10px;
+   line-height: 28px;
+}
+.servicios .fila .col .p-especial{
+    font-weight: bold;
+}
+.servicios .info-servicios{
+    max-width: 800px;
+    margin: auto;
+}
+.servicios .info-servicios table{
+    text-align:center;
+    background-color: rgba(51, 255, 238, 0.6);
+    color: #1f283e;
+    position:relative;
+    bottom: 100px;
+    right: 50px;
+    top: 0;
+}
+.servicios .info-servicios table td{
+    padding: 30px;
+    border: 1px solid #f8f9fa
+}
+.servicios .info-servicios table td i{
+    color: #ff1133;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+
+}
+.servicios .info-servicios h3{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.servicios .info-servicios p{
+    line-height: 30px;
+    text-align: justify;
+}
+/* *********** */
+/* COMODIDADES */
+/* *********** */
+.Planes {
+    width: 1350px;
+    height: 750px;
+    margin:auto;
+    background-color: #8daceb;
+    padding: 100px 20px;
+}
+.Planes .fila{
+    display: flex;
+    align-items: center;
+}
+.Planes .fila .col{
+    width: 50%;
+}
+.Planes .fila .col img{
+    width: 60%;
+    display: block;
+    margin:auto;
+    margin-bottom: 50px;
+}
+.Planes .fila .col .contenedor-titulo{
+    display: flex;
+    align-items: center;
+}
+.Planes .fila .col .contenedor-titulo .numero{
+    color: #ff1133;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+.Planes .fila .col .contenedor-titulo .info{
+    margin-left: 30px;
+}
+.Planes .fila .col .contenedor-titulo .info .frase{
+    color: #ec4f05;
+}
+.Planes .fila .col .contenedor-titulo .info h2{
+    font-size: 3rem;
+}
+.Planes .fila .col p{
+   margin-bottom: 10px;
+   line-height: 28px;
+}
+.Planes .fila .col .p-especial{
+    font-weight: bold;
+}
+.Planes .fila .col li{
+    margin-bottom: 20px;
+    color: #1f283e;
+    text-align: justify;
+}
+.Planes .fila .col li span{
+    font-weight: bold;
+    color: #ff1133;
+}
+/* ********** */
+/* GALERIA */
+/* ********** */
+.galeria{
+    color: #fff;
+    background:linear-gradient( rgba(0, 14, 41, 0.6), rgba(0, 7, 78, 0.7)),url(img/gym.jpg.jfif);
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+}
+.galeria .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+.galeria .contenedor-titulo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.galeria  .contenedor-titulo .numero{
+    color: #ff1133;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+.galeria .contenedor-titulo .info{
+    margin-left: 30px;
+}
+.galeria .contenedor-titulo .info .frase{
+    color: #ff1133;
+}
+.galeria .contenedor-titulo .info h2{
+    font-size: 3rem;
+}
+
+.galeria .fila{
+    display:flex;
+     } 
+
+.galeria .fila .col img{
+    width: 330px;
+    height: 250px;
+    display: block;
+
+}
+/* *********** */
+/* INSTRUCTOR */
+/* *********** */
+.Instructor{
+    width: 1350px;
+    height: 750px;
+    margin: auto;
+    padding-top: 95px;
+    background-color: #dde1e9;
+}
+.contenido-seccion{
+    background-color: #1f283e ;
+}
+.Instructor .contenedor-titulo{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+.Instructor  .contenedor-titulo .numero{
+    color: #ff1133;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+.Instructor .contenedor-titulo .info{
+    margin-left: 30px;
+}
+.Instructor .contenedor-titulo .info .frase{
+    color: #ff1133;
+}
+.Instructor .contenedor-titulo .info h2{
+    font-size: 3rem;
+}
+.Instructor .fila{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.Instructor .fila .col{
+    width: 25%;
+}
+.Instructor .fila .col img{
+   max-height: 400px;
+   display: block;
+   margin: auto;
+}
+.Instructor .fila .info{
+    border: 5px solid #1f283e;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    background: linear-gradient(#ff1133, #9a0e23);
+    color: #fff;
+}
+.Instructor .fila .info p{
+    margin: 20px 0;
+}
+.Instructor .fila .info a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 20px;
+}
+/* *********** */
+/* CONTACTO */
+/* *********** */
+.contacto{
+    color: #fff;
+    background:linear-gradient( rgba(0, 14, 41, 0.6), rgba(0, 7, 78, 0.7)),url(img/fondo2.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 20px;
+
+}
+.contacto .contenido-seccion{
+    max-width: 800px;
+    margin: auto;
+}
+
+.contacto .contenedor-titulo{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+.contacto  .contenedor-titulo .numero{
+    color: #ff1133;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+.contacto .contenedor-titulo .info{
+    margin-left: 30px;
+}
+.contacto .contenedor-titulo .info .frase{
+    color: #ff1133;
+}
+.contacto .contenedor-titulo .info h2{
+    font-size: 3rem;
+}
+.contacto .fila{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.contacto .fila .col{
+    width: 48%;
+}
+.contacto .fila input{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+}
+.contacto textarea{
+    display: block;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    outline: none;
+    width: 100%;
+    height: 200px;
+}
+
+.contacto button{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    border: none;
+    background-color: #ff1133;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contacto .fila-datos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    font-size: 18px;
+    text-align: center;
+}
+.contacto i{
+    color: #ff1133;
+    display: inline-block;
+    margin-right: 10px;
+}
+/* *********** */
+/* FOOTER */
+/* *********** */
+footer{
+    background-color: #151623;
+    padding: 30px 0;
+}
+footer .info{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+footer .info p{
+    color: #797e8e;
+}
+footer .info a{
+    text-decoration: none;
+    color: #797e8e;
+    display: inline-block;
+    margin: 0 15px;
+}
+/* *********** */
+/* RESPONSIVE */
+/* *********** */
+@media only screen and (max-width: 900px) {
+    header nav{
+        position: initial;
+        display: none;
+        transform: translate(0);
+    }
+    header .redes{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position:absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color:#151623;
+        z-index: 99;
+    }
+    nav.responsive a{
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+        font-size: 30px;
+    }
+    .inicio .opciones{
+        display: none;
+    }
+    .nosotros .fila{
+        display: block;
+    }
+    .nosotros .fila .col{
+        width: 100%;
+        margin: auto;
+    }
+    .nosotros .fila .col img{
+        max-width: 200px;
+        display: block;
+        margin: auto;
+    }
+    .servicios .contenido-seccion .fila{
+        display: block;
+    }
+    .servicios .contenido-seccion .fila .col{
+       width: 100%;
+    }
+    .comodidades .fila{
+        display: block;
+    }
+    .comodidades .fila .col{
+        width: 100%;
+    }
+    .comodidades .fila .col img{
+        max-width: 200px;
+    }
+
+    .equipo .fila{
+        display: block;
+    }
+    .equipo .fila .col{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .equipo .fila .col img{
+        max-height: 200px;
+    }
+    .equipo .fila .info{
+        max-width: 250px;
+        margin: auto;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contacto .fila-datos{
+        display: block;
+    }
+    .contacto .fila-datos .col{
+        margin-bottom: 20px;
+    }
+    
+    }
+    footer .info{
+        display: block;
+        text-align: center;
+    }
+    footer .info p{
+        margin-bottom: 20px;
+        
+    }
+
+javascript
+let menuVisible = false;
+//Función que oculta o muestra el menu
+function mostrarOcultarMenu(){
+    if(menuVisible){
+        document.getElementById("nav").classList ="";
+        menuVisible = false;
+    }else{
+        document.getElementById("nav").classList ="responsive";
+        menuVisible = true;
+    }
+}
+function seleccionar(){
+    //oculto el menu una vez que selecciono una opcion
+    document.getElementById("nav").classList = "";
+    menuVisible = false;
+}
+
+

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL TRAINER JJ | Transforma tu cuerpo y mente</title>
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="Entrenador personal en Medellín. Clases funcionales, rumba, militar, hidroaeróbicos. Transforma tu cuerpo y mente.">
+    <meta property="og:title" content="PERSONAL TRAINER JJ">
+    <meta property="og:image" content="img/logo.png">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <!-- Fuente Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- HEADER FIJO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo-container">
+                <h1>PERSONAL<span class="txtRojo">TRAINER JJ</span></h1>
+            </div>
+            <nav id="nav">
+                <a href="#hero" class="activo">Inicio</a>
+                <a href="#conoceme">Conóceme</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#planes">Opciones</a>
+                <a href="#galeria">Galería</a>
+                <a href="#instructor">Instructor</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="redes">
+                <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/personaltrainerjj/?hl=es" aria-label="Instagram" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://wa.me/573002512333" target="_blank" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="nav-responsive" id="nav-responsive-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- HERO SLIDER (4 diapositivas) -->
+    <section id="hero" class="hero-slider">
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/fondo-inicio.jpg');">
+                <div class="slide-content">
+                    <h2 class="slide-title">COMIENZA <span class="txtRojo">AHORA</span></h2>
+                    <p class="slide-subtitle">¡ESTOY AQUÍ PARA AYUDARTE Y ACOMPAÑARTE EN TU PROCESO!</p>
+                    <a href="#contacto" class="btn-cta">Empieza hoy</a>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/foto1.jpg');">
+                <div class="slide-content">
+                    <h2 class="slide-title">ENTRENAMIENTO <span class="txtRojo">FUNCIONAL</span></h2>
+                    <p class="slide-subtitle">Mejora tu fuerza, equilibrio y resistencia con ejercicios naturales.</p>
+                    <a href="#servicios" class="btn-cta">Descubrir</a>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/rumba.jpg');">
+                <div class="slide-content">
+                    <h2 class="slide-title">RUMBA <span class="txtRojo">AERÓBICA</span></h2>
+                    <p class="slide-subtitle">Diviértete mientras quemas calorías al ritmo de la música.</p>
+                    <a href="#servicios" class="btn-cta">Ver más</a>
+                </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/ENTRENOMILITAR21.jpg');">
+                <div class="slide-content">
+                    <h2 class="slide-title">MILITAR <span class="txtRojo">TRAIN</span></h2>
+                    <p class="slide-subtitle">Desarrolla disciplina y resistencia con rutinas de alta intensidad.</p>
+                    <a href="#contacto" class="btn-cta">Únete ya</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flechas de navegación -->
+        <button class="slider-arrow prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-arrow next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+
+        <!-- Indicadores (dots) -->
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONÓCEME (sin cambios importantes, solo ajustes de contenido) -->
+    <section id="conoceme" class="conoceme">
+        <div class="fila">
+            <div class="col img-container animate-slide-in-left">
+                <img src="img/foto perfil.jpg" alt="Personal Trainer JJ">
+            </div>
+            <div class="col text-container animate-slide-in-right">
+                <div class="contenedor-titulo">
+                    <div class="numero">01</div>
+                    <div class="info">
+                        <span class="frase">TRANSFORMA TU CUERPO Y MENTE</span>
+                        <h2>CONÓCEME <br> PERSONAL TRAINER JJ</h2>
+                    </div>
+                </div>
+                <p class="p-especial">
+                    <span class="txtRojo">Licenciado en educación física y deportes</span>: Mi formación académica me ha proporcionado una sólida base en ciencias del deporte, fisiología del ejercicio y metodologías de entrenamiento.
+                    <br><br>
+                    <span class="txtRojo">Tecnólogo en Actividad Física</span>: Con un enfoque práctico y técnico, he adquirido habilidades específicas para diseñar y ejecutar programas de actividad física adaptados a diferentes necesidades y objetivos.
+                    <br><br>
+                    <span class="txtRojo">Certificaciones complementarias</span>: En el ámbito deportivo, el acondicionamiento físico y la actividad física, lo que me permite ofrecer un enfoque integral y actualizado en mis servicios de entrenamiento.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="fila-conoceme animate-fade-in-up">
+            <div class="col1">
+                <span class="frase">
+                    <span class="txtRojo">TRANSFORMA TU CUERPO</span> Y MENTE
+                </span>
+                <h2>ENTRENA <span class="txtRojo">CADA</span> DÍA!</h2>
+            </div>
+            <div class="col2">
+                <a href="#contacto" class="btn-secundario">SEPARA TU SERVICIO</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS (resumida para mantener velocidad) -->
+    <section class="servicios" id="servicios">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+                <div class="numero">02</div>
+                <div class="info">
+                    <span class="frase">TRANSFORMA TU CUERPO Y MENTE</span>
+                    <h2>SERVICIOS</h2>
+                </div>
+            </div>
+            <p class="p-especial">Elige una modalidad de entrenamiento de tu gusto</p>
+            <p class="descripcion">Las modalidades de entrenamiento están diseñadas de manera presencial o virtual, ofreciendo comodidad con las actividades que mejor manejes. Te acompañamos en cada una para que al final de la clase salgas motivado física y mentalmente.</p>
+        </div>
+        <div class="info-servicios">
+            <div class="servicio-card animate-fade-in-up">
+                <i class="fas fa-dumbbell"></i>
+                <h3><span class="txtRojo">Clases</span> de Funcional</h3>
+                <p>Entrenamiento funcional para mejorar movimientos cotidianos y deportivos.</p>
+            </div>
+            <div class="servicio-card animate-fade-in-up">
+                <i class="fa fa-music"></i>
+                <h3><span class="txtRojo">Clases</span> de Rumba aeróbica</h3>
+                <p>Ejercicio divertido con ritmos latinos, ideal para todos los niveles.</p>
+            </div>
+            <div class="servicio-card animate-fade-in-up">
+                <i class="fa-solid fa-person-running"></i>
+                <h3><span class="txtRojo">Clases</span> de Cardio Fitness</h3>
+                <p>Mejora tu resistencia cardiovascular y salud general.</p>
+            </div>
+            <div class="servicio-card animate-fade-in-up">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3><span class="txtRojo">Clases</span> de Militar Train</h3>
+                <p>Rutinas de alta intensidad inspiradas en el entrenamiento militar.</p>
+            </div>
+            <div class="servicio-card animate-fade-in-up">
+                <i class="fas fa-fist-raised"></i>
+                <h3><span class="txtRojo">Artes Marciales</span> adaptadas</h3>
+                <p>Técnicas de artes marciales sin contacto, enfocadas en fitness.</p>
+            </div>
+            <div class="servicio-card animate-fade-in-up">
+                <i class="fas fa-person-swimming"></i>
+                <h3><span class="txtRojo">Clases</span> de Hidroaeróbicos</h3>
+                <p>Ejercicios en el agua, suaves y efectivos para todas las edades.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN OPCIONES (PLANES) -->
+    <section id="planes" class="planes">
+        <div class="fila">
+            <div class="col img-container animate-zoom-in">
+                <img src="img/foto1.jpg" alt="personal trainer jj">
+            </div>
+            <div class="col text-container animate-slide-in-right">
+                <div class="contenedor-titulo">
+                    <div class="numero">03</div>
+                    <div class="info">
+                        <span class="frase">LA MEJOR EXPERIENCIA</span>
+                        <h2>OPCIONES</h2>
+                    </div>
+                </div>
+                <p class="p-especial">¡Contacta hoy mismo y comienza tu transformación!</p>
+                <ul>
+                    <li><span>PRESENCIAL O VIRTUAL</span>: Elige la modalidad que mejor se adapte a tu estilo de vida.</li>
+                    <li><span>ZONA DEL ENTRENADOR O DOMICILIO</span>: Entrena en mi espacio o en la comodidad de tu hogar.</li>
+                    <li><span>UNIDADES DEPORTIVAS O AIRE LIBRE</span>: Disfruta del ejercicio en parques y zonas al aire libre.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN GALERÍA -->
+    <section class="galeria" id="galeria">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+                <div class="numero">04</div>
+                <div class="info">
+                    <span class="frase">TRANSFORMA TU CUERPO Y MENTE</span>
+                    <h2>GALERÍA</h2>
+                </div>
+            </div>
+            <div class="fila galeria-grid">
+                <div class="galeria-item"><img src="img/ENTRENOMILITAR21.jpg" alt="Entrenamiento militar fitness" loading="lazy"></div>
+                <div class="galeria-item"><img src="img/HIDRO1.jpg" alt="Clases de hidroaeróbicos" loading="lazy"></div>
+                <div class="galeria-item"><img src="img/foto3.jpg" alt="Entrenamiento funcional" loading="lazy"></div>
+                <div class="galeria-item"><img src="img/rumba.jpg" alt="Rumba aerobica" loading="lazy"></div>
+                <div class="galeria-item"><img src="img/artes marciales.jpg" alt="Artes marciales adaptadas" loading="lazy"></div>
+                <div class="galeria-item"><img src="img/PAUSAS ACTIVAS-1.jpg" alt="Pausas activas empresariales" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN INSTRUCTOR -->
+    <section class="instructor" id="instructor">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+                <div class="numero">05</div>
+                <div class="info">
+                    <span class="frase">TRANSFORMA TU VIDA, JUNTOS MÁS FUERTES CADA DÍA</span>
+                    <h2>INSTRUCTOR</h2>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col instructor-card animate-fade-in">
+                    <img src="img/foto perfil.jpg" width="252" height="300" alt="Personal Trainer JJ" loading="lazy">
+                    <h3>PERSONAL TRAINER JJ</h3>
+                    <p>“Transforma tu cuerpo, transforma tu vida” <br>Te ayudo no solo físicamente, sino también en tu bienestar general.</p>
+                </div>
+                <div class="col instructor-card animate-fade-in">
+                    <img src="img/ANUNCIO.png" width="252" height="300" alt="Anuncio de entrenamiento" loading="lazy">
+                    <h3>PERSONAL TRAINER JJ</h3>
+                    <p>“Entrena con propósito, vive con pasión” <br>Te inspiro a entrenar con un objetivo claro.</p>
+                </div>
+                <div class="col instructor-card animate-fade-in">
+                    <img src="img/ENTRENOMILITAR21.jpg" width="252" height="300" alt="Entrenamiento militar" loading="lazy">
+                    <h3>PERSONAL TRAINER JJ</h3>
+                    <p>“Inspira, motiva, transforma” <br>Mi propósito es inspirarte y motivarte.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+                <div class="numero">06</div>
+                <div class="info">
+                    <span class="frase">TRANSFORMA TU CUERPO Y MENTE</span>
+                    <h2>CONTACTO</h2>
+                </div>
+            </div>
+            <form action="https://formspree.io/f/xpwlawbr" method="post" class="contact-form">
+                <div class="fila">
+                    <div class="col">
+                        <input type="email" name="email" id="email" placeholder="Ingrese Email" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre" required>
+                    </div>
+                </div>
+                <div class="mensaje">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingresa el Mensaje" required></textarea>
+                    <button type="submit" id="enviar">Enviar Mensaje</button>
+                </div>
+            </form>
+            <div class="fila-datos">
+                <div class="col">
+                    <i class="fa-solid fa-location-dot"></i>
+                    MEDELLÍN - COLOMBIA
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-phone"></i>
+                    +57 300 251 2333
+                </div>
+                <div class="col">
+                    <i class="fa-regular fa-clock"></i>
+                    Lun - Vie, 6:00h - 21:00h <br> Sáb 6:00h - 10:00h
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="info">
+            <p>2025 - <span class="txtRojo">PERSONAL TRAINER JJ</span> Todos los derechos reservados</p>
+            <div class="redes">
+                <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/personaltrainerjj/?hl=es" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://wa.me/573002512333" target="_blank" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <a href="#hero" class="btn-arriba" id="btnArriba"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- SCRIPT PRINCIPAL -->
+    <script src="app.js"></script>
+    <script>
+        // ========== SLIDER FUNCIONALIDAD ==========
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        const dots = document.querySelectorAll('.dot');
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
+
+        // Auto-play cada 5 segundos
+        setInterval(nextSlide, 5000);
+
+        // ========== MENÚ RESPONSIVE ==========
+        function toggleMenu() {
+            const header = document.querySelector('header');
+            header.classList.toggle('responsive');
+        }
+
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('#nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('header').classList.remove('responsive');
+            });
+        });
+
+        // ========== ANIMACIONES AL HACER SCROLL ==========
+        const faders = document.querySelectorAll('.animate-fade-in, .animate-fade-in-up, .animate-slide-in-left, .animate-slide-in-right, .animate-zoom-in');
+        const appearOptions = { threshold: 0.2, rootMargin: '0px 0px -100px 0px' };
+        const appearOnScroll = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+        faders.forEach(el => appearOnScroll.observe(el));
+
+        // ========== BOTÓN VOLVER ARRIBA ==========
+        const btnArriba = document.getElementById('btnArriba');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                btnArriba.classList.add('mostrar');
+            } else {
+                btnArriba.classList.remove('mostrar');
+            }
+        });
+
+        // ========== RESALTAR ENLACE ACTIVO EN EL MENÚ ==========
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('#nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('activo');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('activo');
+                }
+            });
+        });
+
+        // ========== FORMULARIO (sin cambios) ==========
+        document.querySelector("form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const form = e.target;
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            }).then(response => {
+                if (response.ok) {
+                    alert("Mensaje enviado con éxito. ¡Gracias!");
+                    form.reset();
+                } else {
+                    alert("Ocurrió un error. Inténtalo nuevamente.");
+                }
+            });
+        });
+    </script>  
+</body>
+</html>
