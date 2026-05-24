@@ -57,6 +57,19 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+/* ALINEACIÓN DEL LOGO Y TEXTO */
+header .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espacio de separación entre el logo y el texto */
+}
+
+/* TAMAÑO DE LA IMAGEN DEL LOGO */
+header .logo-img {
+    height: 40px; /* Ajusta la altura si lo quieres más grande o pequeño */
+    width: auto;  /* Mantiene las proporciones de la imagen */
+    object-fit: contain;
+}
 header h1 { font-size: 1.5rem; font-weight: 800; }
 header nav a {
     margin: 0 var(--spacing-sm);
