@@ -333,3 +333,38 @@ if (!window.__personalTrainerJJAppInitialized) {
         initFormulario();
     });
 }
+// --- FUNCIONALIDAD DEL SLIDER DE TESTIMONIOS ---
+const track = document.querySelector('.testimonios-track');
+const cards = document.querySelectorAll('.testimonio-card');
+const btnPrev = document.getElementById('prevTestimonio');
+const btnNext = document.getElementById('nextTestimonio');
+
+let indexActual = 0;
+
+function actualizarSlider() {
+    const anchoTarjeta = cards[0].getBoundingClientRect().width; // Toma el ancho exacto de una tarjeta
+    track.style.transform = `translateX(-${indexActual * anchoTarjeta}px)`;
+}
+
+
+if(btnNext && btnPrev) {
+    btnNext.addEventListener('click', () => {
+        if (indexActual < cards.length - 1) {
+            indexActual++;
+        } else {
+            indexActual = 0; // Regresa al inicio si llega al final
+        }
+        actualizarSlider();
+    });
+
+    btnPrev.addEventListener('click', () => {
+        if (indexActual > 0) {
+            indexActual--;
+        } else {
+            indexActual = cards.length - 1; // Va al final si retrocede desde el inicio
+        }
+        actualizarSlider();
+    });
+}
+
+

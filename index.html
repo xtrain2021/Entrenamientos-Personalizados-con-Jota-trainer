@@ -43,6 +43,7 @@ rel="stylesheet">
 
 </head>
 <body>
+    <canvas id="fondo-3d-particulas"></canvas>
     <!-- HEADER FIJO -->
     <div class="contenedor-header">
         <header>
@@ -54,7 +55,7 @@ rel="stylesheet">
                 <a href="#hero" class="activo">Inicio</a>
                 <a href="#conoceme">Conóceme</a>
                 <a href="#servicios">Servicios</a>
-                <a href="#planes">Opciones</a>
+                <a href="#planes">Espacios</a>
                 <a href="#galeria">Galería</a>
                 <a href="#instructor">Instructor</a>
                 <a href="#contacto">Contacto</a>
@@ -765,12 +766,16 @@ rel="stylesheet">
 
             </p>
 
-        </div>
+        </div> <!-- Línea 768: Cierra la tarjeta del alumno -->
+    </div> <!-- AGREGA ESTE: Cierra testimonios-track -->
+</div> <!-- AGREGA ESTE: Cierra testimonios-slider -->
 
+<!-- MUEVE LAS FLECHAS PARA QUE QUEDEN AQUÍ AFUERA -->
+<button class="testimonio-arrow prev" id="prevTestimonio">&#10094;</button>
+<button class="testimonio-arrow next" id="nextTestimonio">&#10095;</button>
 
-    </div>
+</section> <!-- Cierra de la sección testimonios -->
 
-</section>
 
     <!-- SECCIÓN OPCIONES (PLANES) -->
     <section id="planes" class="planes">
@@ -783,13 +788,19 @@ rel="stylesheet">
                     <div class="numero">03</div>
                     <div class="info">
                         <span class="frase">LA MEJOR EXPERIENCIA</span>
-                        <h2>OPCIONES</h2>
+                        <h2></h2>
                     </div>
                 </div>
                 <p class="p-especial">¡Contacta hoy mismo y comienza tu transformación!</p>
+                <h3 class="subtitulo-espacios">¿Cómo prefieres entrenar?</h3>
                 <ul>
-                    <li><span>PRESENCIAL O VIRTUAL</span>: Elige la modalidad que mejor se adapte a tu estilo de vida.</li>
-                    <li><span>ZONA DEL ENTRENADOR O DOMICILIO</span>: Entrena en mi espacio o en la comodidad de tu hogar.</li>
+                    <li><span>ENTRENAMIENTO PRESENCIAL</span>: Siente la energía del entrenamiento cara a cara. 
+                        Ideal si buscas corrección de postura y técnica de los ejercicios en tiempo real
+                         máxima motivación y un compromiso total en cada repetición.</li>
+                        <li><span>ENTRENAMIENTO VIRTUAL</span>: Olvídate de las distancias y los horarios estrictos. Conéctate desde cualquier lugar del mundo y entrena con la misma exigencia
+                             adaptando el plan 100% a tu agenda. </li>
+                    <li><span>A DOMICILIO</span>: Olvídate de los traslados y el tráfico. Llevo el entrenamiento y el equipamiento necesario 
+                        hasta la comodidad de tu hogar para que entrenes de forma eficiente y segura.</li>
                     <li><span>UNIDADES DEPORTIVAS O AIRE LIBRE</span>: Disfruta del ejercicio en parques y zonas al aire libre.</li>
                 </ul>
             </div>
@@ -924,7 +935,7 @@ rel="stylesheet">
 
                 <div class="galeria-overlay">
 
-                    <h3>Artes Marciales Adaptadas</h3>
+                    <h3>Artes Marciales Adaptadas al Fitness</h3>
 
                     <p>
                         Desarrollo físico y mental mediante técnicas adaptadas
@@ -977,7 +988,7 @@ rel="stylesheet">
                 <div class="numero">05</div>
                 <div class="info">
                     <span class="frase">TRANSFORMA TU VIDA, JUNTOS MÁS FUERTES CADA DÍA</span>
-                    <h2>INSTRUCTOR</h2>
+                    <h2>ENTRENADOR JJ</h2>
                 </div>
             </div>
             <div class="fila">
@@ -1076,6 +1087,7 @@ rel="stylesheet">
 
 <!-- SCRIPT PRINCIPAL -->
 <!-- ===================================================== -->
-<script src="app.js"></script>
+    <script src="fondo3d.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
