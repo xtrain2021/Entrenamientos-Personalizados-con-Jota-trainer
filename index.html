@@ -63,7 +63,7 @@ rel="stylesheet">
             <div class="redes">
                 <a href="https://facebook.com" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://instagram.com" aria-label="Instagram" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://wa.me" target="_blank" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://wa.me/+573002512333" target="_blank" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <div class="nav-responsive" id="nav-responsive-btn">
                 <i class="fa-solid fa-bars"></i>
@@ -1024,12 +1024,16 @@ rel="stylesheet">
             <form action="https://formspree.io/f/xpwlawbr" method="post" class="contact-form">
                 <div class="fila">
                     <div class="col">
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre" required>
+                    </div>
+                    <div class="col">
                         <input type="email" name="email" id="email" placeholder="Ingrese Email" required>
                     </div>
                     <div class="col">
-                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre" required>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Ingrese Teléfono / WhatsApp" required>
                     </div>
                 </div>
+    
                 <div class="mensaje">
                     <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingresa el Mensaje" required></textarea>
                     <button type="submit" id="enviar">Enviar Mensaje</button>
@@ -1053,16 +1057,31 @@ rel="stylesheet">
     </section>
 
     <!-- FOOTER -->
-    <footer>
-        <div class="info">
-            <p>2025 - <span class="txtRojo">PERSONAL TRAINER JJ</span> Todos los derechos reservados</p>
-            <div class="redes">
-                <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/personaltrainerjj/?hl=es" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://wa.me/573002512333" target="_blank" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
+    <!-- PIE DE PÁGINA (FOOTER RESTRUCTURADO) -->
+<footer class="main-footer-container">
+    
+    <!-- Espacio vacío a la izquierda para equilibrar el diseño simétricamente -->
+    <div class="footer-left-blank"></div>
+
+    <!-- Bloque central centrado con Derechos y Enlaces Legales -->
+    <div class="footer-copy-container">
+        <p class="copyright-text">2025 - PERSONAL TRAINER JJ Todos los derechos reservados</p>
+        <div class="legal-links">
+            <a href="#privacidad">Política de Privacidad</a>
+            <span class="legal-separator">|</span>
+            <a href="#terminos">Términos y Condiciones</a>
         </div>
-    </footer>
+    </div>
+
+    <!-- Bloque derecho con tus Redes Sociales Originales -->
+    <div class="footer-social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+</footer>
+
 
     <!-- Botón volver arriba -->
     <a href="#hero" class="btn-arriba" id="btnArriba"><i class="fas fa-chevron-up"></i></a>
@@ -1085,6 +1104,10 @@ rel="stylesheet">
 <!-- ===================================================== -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
+<!-- BOTÓN DE WHATSAPP FLOTANTE -->
+<a href="https://wa.me/+573002512333" class="whatsapp-flotante" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+</a>
 <!-- SCRIPT PRINCIPAL -->
 <!-- ===================================================== -->
     <script src="fondo3d.js"></script>

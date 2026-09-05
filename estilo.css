@@ -1662,3 +1662,115 @@ font-size:22px;
     background: #0d0d0d !important; /* El tono oscuro base de tu sitio */
     pointer-events: none !important; /* Permite hacer clic en tus menús y botones sin problemas */
 }
+/* --- BOTÓN FLOTANTE DE WHATSAPP --- */
+.whatsapp-flotante {
+    position: fixed !important;
+    bottom: 25px !important;
+    left: 25px !important; /* Lo ubicamos a la izquierda para no pisar la flecha de subir */
+    background-color: #25d366 !important; /* Verde oficial de WhatsApp */
+    color: #ffffff !important;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 32px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+    z-index: 999999 !important; /* Máxima prioridad para estar por encima del fondo 3D */
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+}
+
+/* Efecto hover al pasar el cursor */
+.whatsapp-flotante:hover {
+    background-color: #128c7e !important; /* Verde más oscuro */
+    transform: scale(1.1) translateY(-5px) !important;
+}
+
+/* Icono centrado sin estilos heredados */
+.whatsapp-flotante i {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+}
+/* --- ORGANIZACIÓN TOTAL DEL PIE DE PÁGINA --- */
+.main-footer-container {
+    display: flex !important;
+    justify-content: space-between !important; /* Separa los bloques uniformemente */
+    align-items: center !important;
+    padding: 20px 40px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    background: transparent !important;
+}
+
+/* Equilibrio visual izquierdo */
+.footer-left-blank {
+    width: 20% !important;
+}
+
+/* Contenedor central con los textos de copyright y legales */
+.footer-copy-container {
+    width: 60% !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+
+.copyright-text {
+    margin: 0 !important;
+    color: #ffffff !important;
+}
+
+.legal-links {
+    display: flex !important;
+    gap: 10px !important;
+    font-size: 0.85rem !important;
+}
+
+.legal-links a {
+    color: rgba(255, 255, 255, 0.4) !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease !important;
+}
+
+.legal-links a:hover {
+    color: var(--color-primario) !important;
+}
+
+/* Contenedor derecho que regresa las redes sociales a su lugar original */
+/* Contenedor derecho que regresa las redes sociales a su lugar original */
+.footer-social-icons {
+    width: 20% !important;
+    display: flex !important;
+    justify-content: flex-end !important; /* Las empuja a la derecha extrema */
+    gap: 15px !important;
+    margin-right: 60px !important; /* ¡ESTA ES LA LÍNEA NUEVA! Las empuja 60px hacia la izquierda */
+}
+
+
+.footer-social-icons a {
+    color: #ffffff !important;
+    font-size: 1.2rem !important;
+    transition: color 0.3s ease !important;
+}
+
+.footer-social-icons a:hover {
+    color: var(--color-primario) !important;
+}
+
+/* Ajuste de adaptabilidad para pantallas de celular */
+@media (max-width: 768px) {
+    .main-footer-container {
+        flex-direction: column !important;
+        gap: 15px !important;
+        text-align: center !important;
+    }
+    .footer-left-blank, .footer-copy-container, .footer-social-icons {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+}
