@@ -1741,36 +1741,147 @@ font-size:22px;
     color: var(--color-primario) !important;
 }
 
-/* Contenedor derecho que regresa las redes sociales a su lugar original */
-/* Contenedor derecho que regresa las redes sociales a su lugar original */
-.footer-social-icons {
-    width: 20% !important;
+/* --- REDISEÑO COMPLETO DE FOOTER EN COLUMNAS (ESTILO COCA-COLA) --- */
+.main-footer-container {
+    width: 100% !important;
+    background: transparent !important;
+    padding: 50px 80px 20px 80px !important; /* Bastante espacio interno */
+    box-sizing: border-box !important;
     display: flex !important;
-    justify-content: flex-end !important; /* Las empuja a la derecha extrema */
-    gap: 15px !important;
-    margin-right: 60px !important; /* ¡ESTA ES LA LÍNEA NUEVA! Las empuja 60px hacia la izquierda */
+    flex-direction: column !important;
+    gap: 40px !important;
 }
 
+/* Distribución de las 3 columnas principales */
+.footer-columns-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important; /* Tres columnas de tamaños iguales */
+    width: 100% !important;
+    align-items: flex-start !important;
+}
+
+/* Estilo para los bloques y los títulos pequeños grises de cada columna */
+.footer-col-block h4 {
+    color: rgba(255, 255, 255, 0.4) !important; /* Texto gris suave sutil */
+    font-size: 0.75rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 20px !important;
+    font-weight: 600 !important;
+}
+
+/* Comportamiento vertical de los menús */
+.footer-vertical-menu {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important; /* Separación vertical limpia */
+}
+
+.footer-vertical-menu a {
+    color: #ffffff !important; /* Letra blanca nítida como en el ejemplo */
+    text-decoration: none !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    transition: color 0.3s ease !important;
+}
+
+.footer-vertical-menu a:hover {
+    color: var(--color-primario) !important; /* Rojo de tu marca al pasar el cursor */
+}
+
+/* Acomodo de la tercera columna (Redes) a la derecha extrema */
+.redes-derecha {
+    display: flex !important;
+    justify-content: flex-end !important; /* Empuja el contenedor al borde derecho */
+}
+
+.footer-social-icons {
+    display: flex !important;
+    gap: 20px !important;
+    margin-right: 20px !important; /* Ajuste sutil para no chocar con la flecha de subir */
+}
 
 .footer-social-icons a {
     color: #ffffff !important;
-    font-size: 1.2rem !important;
-    transition: color 0.3s ease !important;
+    font-size: 1.3rem !important;
+    transition: transform 0.3s ease, color 0.3s ease !important;
 }
 
 .footer-social-icons a:hover {
     color: var(--color-primario) !important;
+    transform: scale(1.1) !important;
 }
 
-/* Ajuste de adaptabilidad para pantallas de celular */
+/* Barra inferior del Copyright */
+.footer-bottom-bar {
+    width: 100% !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important; /* Línea divisoria muy sutil */
+    padding-top: 20px !important;
+    text-align: right !important; /* Alineado a la derecha como Coca-Cola */
+}
+
+.copyright-text {
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-size: 0.8rem !important;
+    margin: 0 !important;
+}
+
+/* Adaptabilidad total para celulares */
 @media (max-width: 768px) {
     .main-footer-container {
-        flex-direction: column !important;
-        gap: 15px !important;
+        padding: 40px 20px 20px 20px !important;
+    }
+    .footer-columns-grid {
+        grid-template-columns: 1fr !important; /* Se vuelve una sola columna en móviles */
+        gap: 30px !important;
         text-align: center !important;
     }
-    .footer-left-blank, .footer-copy-container, .footer-social-icons {
-        width: 100% !important;
+    .footer-vertical-menu {
+        align-items: center !important;
+    }
+    .redes-derecha {
         justify-content: center !important;
     }
+    .footer-social-icons {
+        margin-right: 0 !important;
+    }
+    .footer-bottom-bar {
+        text-align: center !important;
+    }
 }
+/* --- AJUSTE DE REJILLA PARA 4 COLUMNAS CON LOGO --- */
+.footer-columns-grid {
+    grid-template-columns: 1.2fr 1fr 1fr 1fr !important; /* Cambia a 4 columnas y da un poco más de aire al logo */
+    gap: 20px !important;
+}
+
+/* Estilo y tamaño controlado para tu Logotipo */
+.logo-col {
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+}
+
+.footer-logo {
+    max-width: 140px !important; /* Ajusta este número si quieres que tu logo se vea más grande o chico */
+    height: auto !important;
+    opacity: 0.9 !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.footer-logo:hover {
+    opacity: 1 !important; /* Se ilumina sutilmente al pasar el mouse */
+}
+
+/* Desplazamiento adaptable para pantallas de celulares */
+@media (max-width: 768px) {
+    .footer-columns-grid {
+        grid-template-columns: 1fr !important; /* Se apilan en una sola columna vertical */
+        gap: 35px !important;
+    }
+    .logo-col {
+        justify-content: center !important; /* Centra el logo en pantallas móviles */
+        margin-bottom: 10px !important;
+    }
+}
+
