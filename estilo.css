@@ -1,4 +1,4 @@
-/* --- ESTILOS GENERALES Y RESET --- */
+/* --- ESTILOS GENERALES Y RESET CORREGIDOS --- */
 /* ===== VARIABLES ===== */
 :root {
     --color-fondo: #2e2e2e;
@@ -14,31 +14,40 @@
     --font-family-principal: 'Poppins', sans-serif;
     --font-size-base: 1rem;
     --transition-suave: all 0.3s ease;
-}
-
-/* ===== RESET ===== */
-* {
+   }
+   
+   /* ===== RESET ===== */
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family-principal);
     scroll-behavior: smooth;
-}
-
-body {
+   }
+   
+   /* SOLUCIÓN AL SCROLL FIJO: El control de desbordamiento va en el HTML */
+   html {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+   }
+   
+   body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
     line-height: 1.6;
-    overflow-x: hidden;
-}
-
-h1, h2, h3 {
+    width: 100%;
+   }
+   
+   h1, h2, h3 {
     font-weight: 700;
-}
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2.2rem; }
-a { text-decoration: none; color: var(--color-texto); }
-.txtRojo { color: var(--color-primario); }
+   }
+   h1 { font-size: 2.5rem; }
+   h2 { font-size: 2.2rem; }
+   a { text-decoration: none; color: var(--color-texto); }
+   .txtRojo { color: var(--color-primario); }
+   
+   
 
 /* ===== HEADER ===== */
 /*======================================================
@@ -1662,38 +1671,6 @@ font-size:22px;
     background: #0d0d0d !important; /* El tono oscuro base de tu sitio */
     pointer-events: none !important; /* Permite hacer clic en tus menús y botones sin problemas */
 }
-/* --- BOTÓN FLOTANTE DE WHATSAPP --- */
-.whatsapp-flotante {
-    position: fixed !important;
-    bottom: 25px !important;
-    left: 25px !important; /* Lo ubicamos a la izquierda para no pisar la flecha de subir */
-    background-color: #25d366 !important; /* Verde oficial de WhatsApp */
-    color: #ffffff !important;
-    width: 60px !important;
-    height: 60px !important;
-    border-radius: 50% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    font-size: 32px !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
-    z-index: 999999 !important; /* Máxima prioridad para estar por encima del fondo 3D */
-    transition: all 0.3s ease !important;
-    text-decoration: none !important;
-}
-
-/* Efecto hover al pasar el cursor */
-.whatsapp-flotante:hover {
-    background-color: #128c7e !important; /* Verde más oscuro */
-    transform: scale(1.1) translateY(-5px) !important;
-}
-
-/* Icono centrado sin estilos heredados */
-.whatsapp-flotante i {
-    margin: 0 !important;
-    padding: 0 !important;
-    line-height: 1 !important;
-}
 /* --- ORGANIZACIÓN TOTAL DEL PIE DE PÁGINA --- */
 .main-footer-container {
     display: flex !important;
@@ -2118,7 +2095,59 @@ font-size:22px;
     box-shadow: 0 5px 15px rgba(219, 48, 34, 0.4) !important;
     transform: translateY(-2px) !important;
 }
+/* ===================================================== */
+/*   ESTILOS DEFINITIVOS: BOTONES FIJOS ANTI-BLOQUEO     */
+/* ===================================================== */
 
+/* BOTÓN WHATSAPP (FIJADO A LA IZQUIERDA EN PANTALLA) */
+.whatsapp-flotante {
+    position: fixed !important;
+    bottom: 25px !important;
+    left: 25px !important;
+    right: auto !important; /* Desactiva anclajes previos del lado derecho */
+    width: 60px !important;
+    height: 60px !important;
+    background-color: #25d366 !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 32px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+    z-index: 999999 !important; /* Prioridad de capa máxima */
+    transform: translateZ(0); /* Forzado de aceleración de hardware para evitar bloqueos por animaciones */
+    transition: transform 0.3s ease, background-color 0.3s ease !important;
+}
 
+.whatsapp-flotante:hover {
+    background-color: #20ba5a !important;
+    transform: scale(1.1) translateZ(0) !important;
+}
 
+/* BOTÓN VOLVER ARRIBA (FIJADO A LA DERECHA EN PANTALLA) */
+.btn-arriba {
+    position: fixed !important;
+    bottom: 25px !important;
+    right: 25px !important;
+    left: auto !important;
+    width: 50px !important;
+    height: 50px !important;
+    background-color: var(--color-primario) !important; /* Tu color rojo corporativo */
+    color: #fff !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 20px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+    z-index: 999999 !important; /* Prioridad de capa máxima */
+    transform: translateZ(0); /* Forzado de aceleración de hardware para evitar bloqueos por animaciones */
+    transition: transform 0.3s ease, background-color 0.3s ease !important;
+}
+
+.btn-arriba:hover {
+    background-color: #b82207 !important;
+    transform: scale(1.1) translateZ(0) !important;
+}
 
