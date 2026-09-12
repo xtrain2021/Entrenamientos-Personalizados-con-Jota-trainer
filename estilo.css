@@ -2118,53 +2118,6 @@ font-size:22px;
     box-shadow: 0 5px 15px rgba(219, 48, 34, 0.4) !important;
     transform: translateY(-2px) !important;
 }
-/* --- ESTILOS DE COBERTURA Y MAPA DE SEO LOCAL --- */
-.cobertura-local-bloque {
-    max-width: 1100px !important;
-    margin: 40px auto !important;
-    padding: 0 30px !important;
-    box-sizing: border-box !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 20px !important;
-}
-
-.texto-cobertura h3 {
-    color: #ffffff !important;
-    font-size: 1.6rem !important;
-    margin-bottom: 8px !important;
-    font-weight: 700 !important;
-}
-
-.texto-cobertura p {
-    color: rgba(255, 255, 255, 0.7) !important;
-    font-size: 0.95rem !important;
-    margin: 0 !important;
-}
-
-.mapa-contenedor {
-    width: 100% !important;
-    border-radius: 12px !important; /* Bordes redondeados modernos */
-    overflow: hidden !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) !important;
-    filter: grayscale(40%) contrast(110%) !important; /* Filtro premium para que combine con tu web oscura */
-    transition: filter 0.4s ease, border-color 0.4s ease !important;
-}
-
-/* El mapa recupera todo su color real al interactuar con él */
-.mapa-contenedor:hover {
-    filter: grayscale(0%) !important;
-    border-color: var(--color-primario) !important;
-}
-
-/* Adaptabilidad móvil */
-@media (max-width: 768px) {
-    .cobertura-local-bloque {
-        padding: 0 20px !important;
-        text-align: center !important;
-    }
-}
 
 
 
