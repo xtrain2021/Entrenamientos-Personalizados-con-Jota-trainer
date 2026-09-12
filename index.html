@@ -9,6 +9,16 @@
     <meta name="description" content="Entrenador personal en Medellín. Clases funcionales, rumba, militar, hidroaeróbicos. Transforma tu cuerpo y mente.">
     <meta property="og:title" content="PERSONAL TRAINER JJ">
     <meta property="og:image" content="img/logo.png">
+     <!-- SEGURIDAD Y CONFIGURACIÓN DE METAETIQUETAS PREMIUM (PERMISO MAPA INCLUIDO) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https://formspree.io;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+            <!-- CONFIGURACIÓN DE SEO LOCAL - GEOLOCALIZACIÓN -->
+    <meta name="geo.region" content="CO-ANT"> <!-- Colombia, Antioquia -->
+    <meta name="geo.placename" content="Itagüí"> <!-- Tu municipio principal -->
+    <meta name="geo.position" content="6.1731;-75.6083"> <!-- Coordenadas satelitales de Itagüí -->
+    <meta name="ICBM" content="6.1731, -75.6083">
     <link rel="icon" href="img/logojota.png" type="image/png">
     <!-- Fuente Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -478,6 +488,7 @@ rel="stylesheet">
     </div>
 
 </section>
+
 <!-- ===================================================== -->
 <!-- SECCIÓN TESTIMONIOS -->
 <!-- Colocar después de SERVICIOS -->
@@ -777,7 +788,7 @@ rel="stylesheet">
 </section> <!-- Cierra de la sección testimonios -->
 
 
-    <!-- SECCIÓN OPCIONES (PLANES) -->
+    <!-- SECCIÓN ESPACIOS -->
     <section id="planes" class="planes">
         <div class="fila">
             <div class="col img-container animate-zoom-in">
@@ -806,6 +817,19 @@ rel="stylesheet">
             </div>
         </div>
     </section>
+    <!-- BLOQUE DE COBERTURA Y SEO LOCAL -->
+<div class="cobertura-local-bloque" data-aos="fade-up">
+    <div class="texto-cobertura">
+        <h3>Nuestra Zona de Cobertura</h3>
+        <p>Atiendo de forma presencial en las principales unidades deportivas, parques y domicilios del municipio de Itagüí. ¡Elige tu escenario ideal!</p>
+    </div>
+    <div class="mapa-contenedor">
+        <iframe src="https://google.com" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </div>
+</div>
+
 
     <!-- ===================================================== -->
 <!-- GALERÍA PREMIUM -->
@@ -980,6 +1004,58 @@ rel="stylesheet">
     </div>
 
 </section>
+<!-- SECCIÓN GALERÍA DE VIDEOS: SALUD, ESTÉTICA Y RENDIMIENTO -->
+<section id="experiencia-jj" class="video-galeria-seccion" data-aos="fade-up">
+    
+    <div class="video-titulos-bloque">
+        <span class="frase-corta">Mantenimiento, Estética y Salud</span>
+        <h2>Optimiza tu Condición Física</h2>
+        <p class="descripcion-general-salud">
+            Mira nuestro método de entrenamiento en acción. Diseñado para mejorar tu condición física, proteger tu rendimiento óptimo de salud y esculpir una figura atlética y saludable.
+        </p>
+    </div>
+
+        <!-- CUADRÍCULA DE VIDEOS CON BOTÓN DE ACCIÓN RÁPIDA (CTA) -->
+        <div class="video-galeria-grid">
+        
+            <!-- Tarjeta Video 1 -->
+            <div class="video-galeria-card">
+                <div class="video-galeria-wrapper vertical-format">
+                    <video src="videos/ENTRENO_AL_aire libre 2.mp4" controls preload="metadata" poster="img/poster1.jpg"></video>
+                </div>
+                <h4>Entrenamiento Funcional</h4>
+                <a href="#contacto" class="btn-video-cta" data-servicio="funcional">¡Me interesa!</a>
+            </div>
+    
+            <!-- Tarjeta Video 2 -->
+            <div class="video-galeria-card">
+                <div class="video-galeria-wrapper vertical-format">
+                    <video src="videos/entreno_bosque_grande.mp4" controls preload="metadata" poster="img/poster2.jpg"></video>
+                </div>
+                <h4>Entrena desde casa</h4>
+                <a href="#contacto" class="btn-video-cta" data-servicio="funcional">¡Me interesa!</a>
+            </div>
+    
+            <!-- Tarjeta Video 3 -->
+            <div class="video-galeria-card">
+                <div class="video-galeria-wrapper vertical-format">
+                    <video src="videos/ENTRENOS VARIOS.mp4" controls preload="metadata" poster="img/poster3.jpg"></video>
+                </div>
+                <h4>Cardio Estético</h4>
+                <a href="#contacto" class="btn-video-cta" data-servicio="artes_marciales">¡Me interesa!</a>
+            </div>
+    
+            <!-- Tarjeta Video 4 -->
+            <div class="video-galeria-card">
+                <div class="video-galeria-wrapper vertical-format">
+                    <video src="videos/entrenos varioss.mp4" controls preload="metadata" poster="img/poster4.jpg"></video>
+                </div>
+                <h4>Mantenimiento y Salud</h4>
+                <a href="#contacto" class="btn-video-cta" data-servicio="funcional">¡Me interesa!</a>
+            </div>
+    
+        </div>
+    
 
     <!-- SECCIÓN INSTRUCTOR -->
     <section class="instructor" id="instructor">
@@ -1021,7 +1097,7 @@ rel="stylesheet">
                     <h2>CONTACTO</h2>
                 </div>
             </div>
-            <form action="https://formspree.io/f/xpwlawbr" method="post" class="contact-form">
+            <form action="https://formspree.io" method="post" class="contact-form" id="form-inteligente">
                 <div class="fila">
                     <div class="col">
                         <input type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre" required>
@@ -1033,16 +1109,33 @@ rel="stylesheet">
                         <input type="tel" name="telefono" id="telefono" placeholder="Ingrese Teléfono / WhatsApp" required>
                     </div>
                 </div>
-    
-                <div class="mensaje">
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingresa el Mensaje" required></textarea>
-                    <button type="submit" id="enviar">Enviar Mensaje</button>
+            
+                <!-- SELECTOR DE SERVICIO INTELIGENTE -->
+                <div class="fila" style="margin-top: 15px;">
+                    <div class="col">
+                        <select name="servicio_interes" id="servicio_interes" required style="width:100%; padding:12px; background:#111; color:#fff; border:1px solid rgba(255,255,255,0.1); border-radius:5px;">
+                            <option value="" disabled selected>Selecciona el servicio de tu interés</option>
+                            <option value="funcional">Entrenamiento Funcional / Personalizado</option>
+                            <option value="artes_marciales">Artes Marciales Adaptadas al Fitness</option>
+                            <option value="pausas_activas">Pausas Activas Empresariales</option>
+                        </select>
+                    </div>
+                </div>
+            
+                <!-- CONTENEDOR DE PREGUNTAS DINÁMICAS (Se llena con JS) -->
+                <div id="campos-dinamicos" class="fila" style="margin-top: 15px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;"></div>
+            
+                <div class="mensaje" style="margin-top: 15px;">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Información adicional o comentarios" required></textarea>
+                    <button type="submit" id="enviar">Enviar Solicitud</button>
                 </div>
             </form>
+            
+
             <div class="fila-datos">
                 <div class="col">
                     <i class="fa-solid fa-location-dot"></i>
-                    MEDELLÍN - COLOMBIA
+                    ITAGUI - COLOMBIA
                 </div>
                 <div class="col">
                     <i class="fa-solid fa-phone"></i>
@@ -1056,13 +1149,11 @@ rel="stylesheet">
         </div>
     </section>
 
-    <!-- PIE DE PÁGINA ESTILO PREMIUM (ESTRUCTURA DE COLUMNAS) -->
-<footer class="main-footer-container">
+    <footer class="main-footer-container">
     
-    <!-- Bloque Superior: Las Columnas de Contenido -->
         <!-- Bloque Superior: Las Columnas de Contenido -->
         <div class="footer-columns-grid">
-        
+            
             <!-- Columna 1: Tu Logo de Marca -->
             <div class="footer-col-block logo-col">
                 <img src="img/logojota.png" alt="Personal Trainer JJ Logo" class="footer-logo">
@@ -1094,54 +1185,42 @@ rel="stylesheet">
             <!-- Columna 4: Redes Sociales (Empujadas a la derecha) -->
             <div class="footer-col-block redes-derecha">
                 <div class="footer-social-icons">
-                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/+573002512333" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
     
         </div>
     
-
-    <!-- Bloque Inferior: Derechos Reservados de lado a lado -->
-    <div class="footer-bottom-bar">
-        <p class="copyright-text">© 2025 Personal Trainer JJ. Todos los derechos reservados.</p>
-    </div>
-
-</footer>
-
-
+        <!-- Bloque Inferior: Derechos Reservados de lado a lado -->
+        <div class="footer-bottom-bar">
+            <p class="copyright-text">© 2025 Personal Trainer JJ. Todos los derechos reservados.</p>
+        </div>
     
-
-
-    <!-- Botón volver arriba -->
+    </footer>
+   
+   <!-- Botón volver arriba -->
     <a href="#hero" class="btn-arriba" id="btnArriba"><i class="fas fa-chevron-up"></i></a>
 
    
-<!-- SCRIPT PRINCIPAL DEL PROYECTO -->
-<!-- ===================================================== -->
-<script src="app.js"></script>
+    <!-- ===================================================== -->
+    <!-- LIBRERÍAS EXTERNAS DE ANIMACIONES PREMIUM -->
+    <!-- ===================================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
 
-<!-- ===================================================== -->
-<!-- GSAP (Animaciones Premium) -->
-<!-- ===================================================== -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <!-- BOTÓN DE WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/+573002512333" class="whatsapp-flotante" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-<!-- ScrollTrigger -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
-
-<!-- ===================================================== -->
-<!-- AOS -->
-<!-- ===================================================== -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<!-- BOTÓN DE WHATSAPP FLOTANTE -->
-<a href="https://wa.me/+573002512333" class="whatsapp-flotante" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-whatsapp"></i>
-</a>
-<!-- SCRIPT PRINCIPAL -->
-<!-- ===================================================== -->
-    <script src="fondo3d.js"></script>
-    <script src="app.js"></script>
+    <!-- ===================================================== -->
+    <!-- SCRIPTS PROPIOS DEL PROYECTO (AL FINAL ABSOLUTO) -->
+    <!-- ===================================================== -->
+    <script src="fondo3d.js" defer></script>
+    <script src="app.js" defer></script>
+    
 </body>
 </html>

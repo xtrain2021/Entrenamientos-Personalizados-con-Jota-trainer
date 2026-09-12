@@ -366,5 +366,97 @@ if(btnNext && btnPrev) {
         actualizarSlider();
     });
 }
+// --- LÓGICA DE FORMULARIO INTELIGENTE Y SANITIZACIÓN ANTI-XSS ---
+const selectorServicio = document.getElementById('servicio_interes');
+const contenedorDinamico = document.getElementById('campos-dinamicos');
+const formulario = document.getElementById('form-inteligente');
+
+// Función para limpiar caracteres peligrosos (Anti-XSS e Inyecciones)
+function sanitizarEntrada(texto) {
+    const mapaCaracteres = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#x27;',
+        "/": '&#x2F;',
+        "\\": '&#x5C;'
+    };
+    return texto.replace(/[&<>"'\/\\;]/g, (s) => mapaCaracteres[s]).trim();
+}
+
+// Escuchar cambios en el selector de servicios
+if (selectorServicio && contenedorDinamico) {
+    selectorServicio.addEventListener('change', (e) => {
+        const seleccion = e.target.value;
+        contenedorDinamico.innerHTML = ''; // Limpiar campos previos
+
+        if (seleccion === 'funcional') {
+            contenedorDinamico.innerHTML = `
+                <div class="col"><input type="number" name="edad" placeholder="Tu Edad" required min="1" max="100"></div>
+                <div class="col"><input type="text" name="objetivo" placeholder="Objetivo (Bajar peso, masa, salud)" required></div>
+                <div class="col"><input type="text" name="frecuencia_semanal" placeholder="¿Cuántas veces por semana?" required></div>
+                <div class="col"><input type="text" name="horario_preferido" placeholder="Horario ideal (Mañana, Tarde, Noche)" required></div>
+            `;
+        } else if (seleccion === 'artes_marciales') {
+            contenedorDinamico.innerHTML = `
+                <div class="col"><input type="text" name="experiencia_previa" placeholder="¿Tienes experiencia en artes marciales? (Sí/No)" required></div>
+                <div class="col"><input type="text" name="lesiones" placeholder="¿Tienes alguna lesión física?" required></div>
+            `;
+        } else if (seleccion === 'pausas_activas') {
+            contenedorDinamico.innerHTML = `
+                <div class="col"><input type="text" name="empresa_nombre" placeholder="Nombre de la Empresa" required></div>
+                <div class="col"><input type="number" name="numero_empleados" placeholder="Número de empleados aprox." required min="1"></div>
+            `;
+        }
+    });
+}
+
+// Validación y desinfección antes del envío
+if (formulario) {
+    formulario.addEventListener('submit', (e) => {
+        const inputs = formulario.querySelectorAll('input, textarea, select');
+        let formularioValido = true;
+
+        inputs.forEach(input => {
+            // Sanitizar valores de texto
+            if (input.type === 'text' || input.tagName === 'TEXTAREA') {
+                input.value = sanitizarEntrada(input.value);
+            }
+            
+            // Validar teléfono estrictamente (solo números)
+            if (input.id === 'telefono') {
+                const telefonoLimpio = input.value.replace(/\D/g, ''); // Quita lo que no sea número
+                if (telefonoLimpio.length < 7 || telefonoLimpio.length > 15) {
+                    alert('Por favor, ingresa un número de teléfono o WhatsApp válido.');
+                    formularioValido = false;
+                } else {
+                    input.value = telefonoLimpio;
+                }
+            }
+        });
+
+        if (!formularioValido) {
+            e.preventDefault(); // Detiene el envío si hay errores
+        }
+    });
+}
+// --- AUTO-SELECCIÓN DE SERVICIO DESDE EL CARRUSEL DE VIDEOS ---
+const botonesVideoCta = document.querySelectorAll('.btn-video-cta');
+const selectorFormulario = document.getElementById('servicio_interes');
+
+if (botonesVideoCta.length > 0 && selectorFormulario) {
+    botonesVideoCta.addEventListener('click', function(e) {
+        // Obtenemos el tipo de servicio configurado en el botón
+        const servicioAsociado = this.getAttribute('data-servicio');
+        
+        // Asignamos el valor al selector de tu formulario inteligente
+        selectorFormulario.value = servicioAsociado;
+        
+        // Forzamos el evento 'change' para que JavaScript dibuje las preguntas dinámicas (edad, objetivo, etc.)
+        const eventoChange = new Event('change');
+        selectorFormulario.dispatchEvent(eventoChange);
+    });
+}
 
 
