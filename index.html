@@ -10,8 +10,9 @@
     <meta property="og:title" content="PERSONAL TRAINER JJ">
     <meta property="og:image" content="img/logo.png">
      <!-- SEGURIDAD Y CONFIGURACIÓN DE METAETIQUETAS PREMIUM (PERMISO MAPA INCLUIDO) -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https://formspree.io;">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+     <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https://formspree.io https://google-analytics.com https://google.com https://doubleclick.net https://facebook.com;">
+
+     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
             <!-- CONFIGURACIÓN DE SEO LOCAL - GEOLOCALIZACIÓN -->
@@ -28,7 +29,52 @@
 <!-- ========================= -->
 <!-- NUEVA FUENTE PREMIUM -->
 <!-- (Puedes dejar Poppins por ahora. Más adelante decidiremos si la reemplazamos.) -->
-<!-- ========================= -->
+ <!-- Fuente Poppins -->
+ <link href="https://googleapis.com" rel="stylesheet">
+ 
+ <!-- ===================================================== -->
+ <!-- NUEVA FUENTE PREMIUM -->
+ <!-- (Puedes dejar Poppins por ahora. Más adelante decidiremos si la reemplazamos.) -->
+ <!-- ===================================================== -->
+
+ <!-- ===================================================== -->
+ <!-- PASO 2: CÓDIGO DE SEGUIMIENTO GOOGLE ANALYTICS (GA4) -->
+ <!-- ===================================================== -->
+ <script async src="https://googletagmanager.com"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'G-XXXXXXXXXX', {
+     'anonymize_ip': true,
+     'cookie_flags': 'SameSite=None;Secure'
+   });
+ </script>
+
+ <!-- ===================================================== -->
+ <!-- PASO 3: CÓDIGO DE SEGUIMIENTO PÍXEL DE META (FACEBOOK)-->
+ <!-- ===================================================== -->
+ <script>
+   !function(f,b,e,v,n,t,s)
+   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+   if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+   n.queue=[];t=b.createElement(e);t.async=!0;
+   t.src=v;s=b.getElementsByTagName(e);
+   s.parentNode.insertBefore(t,s)}(window, document,'script',
+   'https://facebook.net');
+   fbq('init', '123456789012345');
+   fbq('track', 'PageView');
+ </script>
+ <noscript>
+   <img height="1" width="1" style="display:none" src="https://facebook.com"/>
+ </noscript>
+ <!-- ===================================================== -->
+
+</head>
+
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
 <link rel="preconnect"
