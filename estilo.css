@@ -2249,3 +2249,41 @@ header nav a {
     font-size: 0.9rem !important; /* Reducimos la tipografía un poco para dar aire */
     white-space: nowrap !important; /* Fuerza al navegador a mantener la palabra en una sola línea */
 }
+/* ===================================================== */
+/*   ESTILOS PREMIUM: CASILLA DE ACEPTACIÓN LEGAL        */
+/* ===================================================== */
+.casilla-legal-container {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.casilla-legal-label {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+/* Diseña el cuadrito del checkbox */
+.casilla-legal-label input[type="checkbox"] {
+    width: 18px !important;
+    height: 18px !important;
+    margin-top: 2px;
+    cursor: pointer;
+    accent-color: var(--color-primario); /* Pinta el "chulito" del color rojo de tu marca */
+}
+
+/* Estilo para el enlace al PDF dentro del formulario */
+.link-legal-form {
+    color: var(--color-primario) !important;
+    text-decoration: underline !important;
+    font-weight: 600;
+    transition: var(--transition-suave);
+}
+
+.link-legal-form:hover {
+    color: #ff6666 !important;
+}
